@@ -38,14 +38,15 @@ export default function About() {
           </div>
 
           <p className="text-muted-foreground text-center">
-            I'm an engineering student at Kyushu University (IUPE), who passionate about Computer Aided Engineering and
-            Vibration Analysis.
+            I'm an engineering student at Kyushu University (IUPE) with a passion for structural dynamics and vibration analysis. My academic journey began at age 14, when I discovered Computer-Aided Design (CAD) through tools like FreeCAD. I was immediately drawn to the precision, scalability, and creative potential CAD offers—especially in the field of engineering.
           </p>
 
           <p className="text-muted-foreground text-center">
-            My academic journey has focused on Computer Aided Design, Finite Element Analysis, and Structural Dynamics.
-            I hope these passion would integrated in further engineering advancements, enhance energy production
-            efficiency and sustainability.
+            My interest deepened during my participation in the Physics Olympiad, where I developed a strong enthusiasm for mechanics and logical problem-solving. This led me to explore how computational tools and CAD skills could be combined to solve complex mechanical problems using methods like the Finite Element Method (FEM).
+          </p>
+
+          <p className="text-muted-foreground text-center">
+            I’m particularly driven by the often-overlooked importance of structural dynamics in modern engineering design. Neglecting dynamic behavior in structures can lead to critical issues in real-world applications. That’s why I’m passionate about advancing tools and technologies that help engineers better understand and integrate dynamic analysis into their designs—especially in energy systems and upstream machinery.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 text-sm max-w-md mx-auto">

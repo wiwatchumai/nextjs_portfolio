@@ -29,7 +29,7 @@ export default function Hero() {
         >
           <div className="space-y-6">
             <div>
-              <p className="text-sm text-primary mb-2 font-mono">Mechanical Engineering Student</p>
+              <p className="text-sm text-primary mb-2 font-mono">Mechanical and Aerospace Engineering Student</p>
               <h1 className="text-4xl md:text-5xl font-bold">
                 Hi, I'm <span className="text-primary">Wiwat Chumai</span>
               </h1>
@@ -37,12 +37,7 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-muted-foreground mx-auto">
-              A passionate engineering student at Kyushu University in Japan, particularly in the fields of
-              Computer-Aided Engineering and vibration analysis. I aspire to apply my interests to drive innovation
-              within global industries and contribute to advancements in engineering design. As I embark on my studies
-              in Mechanical and Aerospace Engineering, my goal over the next ten years is to become both a specialist
-              and an innovator in the field. I aim to seek opportunities to launch a startup that advances engineering
-              solutions and fosters technological progress.
+              "A passionate engineering student at Kyushu University (IUPE), Japan, specializing in structural dynamics and vibration analysis using advanced Computer-Aided Engineering (CAE) tools."
             </p>
 
             <div className="flex gap-4 justify-center">

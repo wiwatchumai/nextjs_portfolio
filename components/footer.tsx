@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin, Mail, Lightbulb } from "lucide-react"
+import { Github, Linkedin, Mail, Instagram, Lightbulb } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -22,7 +22,15 @@ export default function Footer() {
             <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
             </Link>
-            <Link href="mailto:martin.novak@example.com" aria-label="Email">
+            <Link
+              href="https://www.instagram.com/feuzzy_field/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
+            </Link>
+            <Link href="mailto:wiwatchumai@gmail.com" aria-label="Email">
               <Mail className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
             </Link>
           </div>

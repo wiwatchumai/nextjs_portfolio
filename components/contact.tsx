@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { Card, CardContent } from "@/components/ui/card"
-import { MapPin, Mail, Phone } from "lucide-react"
+import { MapPin, Mail, Phone, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Contact() {
@@ -27,6 +27,11 @@ export default function Contact() {
       icon: <Phone className="h-5 w-5" />,
       title: "Phone",
       details: "+66 655890972",
+    },
+    {
+      icon: <Instagram className="h-5 w-5" />,
+      title: "Instagram",
+      details: "@feuzzy_field",
     },
   ]
 
@@ -63,23 +68,39 @@ export default function Contact() {
                       <div className="bg-primary/10 p-2 rounded-md text-primary">{item.icon}</div>
                       <div>
                         <h4 className="font-medium">{item.title}</h4>
-                        <p className="text-muted-foreground">{item.details}</p>
+                        {item.title === "Instagram" ? (
+                          <a
+                            href="https://www.instagram.com/feuzzy_field/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                          >
+                            {item.details}
+                          </a>
+                        ) : (
+                          <p className="text-muted-foreground">{item.details}</p>
+                        )}
                       </div>
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-4">
-                  <p className="text-sm text-muted-foreground">
-                    Currently looking for internship opportunities for Summer 2024
-                  </p>
-                </div>
-
-                <div className="flex justify-center pt-4">
+                <div className="flex justify-center pt-4 gap-4">
                   <Button asChild className="rounded-md" variant="default">
                     <a href="mailto:wiwatchumai@gmail.com" className="flex items-center gap-2">
                       <Mail className="h-4 w-4" />
                       <span>Email Me</span>
+                    </a>
+                  </Button>
+                  <Button asChild className="rounded-md" variant="outline">
+                    <a
+                      href="https://www.instagram.com/feuzzy_field/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <Instagram className="h-4 w-4" />
+                      <span>Follow on Instagram</span>
                     </a>
                   </Button>
                 </div>

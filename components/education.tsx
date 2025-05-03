@@ -18,7 +18,7 @@ export default function Education() {
       institution: "Kyushu University (IUPE)",
       period: "2025 - Present",
       description:
-        "The course aim to nurture first-class researchers and technologists who will take a leading role in the world of science and technology.",
+        "Kyushu University offers international undergraduate programs, including Mechanical and Aerospace Engineering, providing high-quality education in a small, interactive class environment. These programs offer research opportunities with leading scientists at advanced research facilities, fostering a global perspective among students.",
       courses: ["Mechanical and Aerospace Engineering"],
       achievements: ["Ongoing"], // Added achievements array
     },
