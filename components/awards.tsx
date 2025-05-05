@@ -11,9 +11,9 @@ type AwardItem = {
   organization: string
   date: string
   location: string
-  description: string
+  description?: string
   category: string
-  achievement?: string
+  achievements: string[]
 }
 
 export default function Awards() {
@@ -29,7 +29,7 @@ export default function Awards() {
       date: "January 2025",
       location: "Bangkok, Thailand",
       category: "Physics and Astronomy",
-      achievement: "Gold Medal", "First Place Award"
+      achievements: ["Gold Medal", "First Place Award"],
     },
     {
       title: "ASEAN Student Science Fair (ASSF-2024)",
@@ -37,7 +37,7 @@ export default function Awards() {
       date: "August 2024",
       location: "Online competition",
       category: "Physics and Astronomy",
-      achievement: "Gold Medal", "First Place Award"
+      achievements: ["Gold Medal", "First Place Award"],
     },
     {
       title: "SUT SMILE CYS III national conference on science",
@@ -45,7 +45,7 @@ export default function Awards() {
       date: "August 2024",
       location: "Faculty of science, Suranaree University of Technology, Thailand",
       category: "Physical science",
-      achievement: "Gold Medal", "Best Poster Presentation Award", "First Place Award"
+      achievements: ["Gold Medal", "Best Poster Presentation Award", "First Place Award"],
     },
     {
       title: "Jakarta International Science Fair (JISF-2024)",
@@ -53,7 +53,7 @@ export default function Awards() {
       date: "July 2024",
       location: "Indonesian Institute of Life-Science, Indonesia",
       category: "Innovative Science",
-      achievement: "Gold Medal", "Second Place Award"
+      achievements: ["Gold Medal", "Second Place Award"],
     },
     {
       title: "International Science Project Competition (ISPC-2024)",
@@ -61,15 +61,16 @@ export default function Awards() {
       date: "September 2024",
       location: "Online competition",
       category: "Innovative Science",
-      achievement: "Silver Medal",
+      achievements: ["Silver Medal"],
     },
     {
       title: "Thailand Physics Olympiad",
-      organization: "The Promotion of Academic Olympiad and Development of Science Education Foundation under the patronage of Her Royal Highness Princess Galyani Vadhana Krom Luang Naradhiwas Rajanagarindra",
+      organization:
+        "The Promotion of Academic Olympiad and Development of Science Education Foundation under the patronage of Her Royal Highness Princess Galyani Vadhana Krom Luang Naradhiwas Rajanagarindra",
       date: "2022-2024",
       location: "Burapha University, Thailand",
       category: "Physics",
-      achievement: "Qualified to second stage",
+      achievements: ["Qualified to second stage"],
     },
   ]
 
@@ -111,7 +112,7 @@ export default function Awards() {
                     </div>
 
                     <div className="md:w-3/4 space-y-4">
-                      <p>{award.description}</p>
+                      {award.description && <p>{award.description}</p>}
 
                       <div className="flex flex-wrap gap-4">
                         <div className="flex items-center gap-2">
@@ -123,19 +124,24 @@ export default function Awards() {
                           <Trophy className="h-4 w-4 text-primary" />
                           <Badge variant="secondary">{award.category}</Badge>
                         </div>
-
-                        {award.achievement && (
-                          <div className="flex items-center gap-2">
-                            <Award className="h-4 w-4 text-secondary" />
-                            <Badge
-                              variant="outline"
-                              className="bg-secondary/10 text-secondary-foreground border-secondary/20"
-                            >
-                              {award.achievement}
-                            </Badge>
-                          </div>
-                        )}
                       </div>
+
+                      {award.achievements.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          <Award className="h-4 w-4 text-secondary mt-1" />
+                          <div className="flex flex-wrap gap-2">
+                            {award.achievements.map((achievement, i) => (
+                              <Badge
+                                key={i}
+                                variant="outline"
+                                className="bg-secondary/10 text-secondary-foreground border-secondary/20"
+                              >
+                                {achievement}
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
