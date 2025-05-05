@@ -20,7 +20,7 @@ export default function Education() {
       description:
         "Kyushu University offers international undergraduate programs, including Mechanical and Aerospace Engineering, providing high-quality education in a small, interactive class environment. These programs offer research opportunities with leading scientists at advanced research facilities, fostering a global perspective among students.",
       courses: ["Mechanical and Aerospace Engineering"],
-      achievements: ["Ongoing"], // Added achievements array
+      achievements: ["Monbukagakusho Scholarship (MEXT 2025) awarded international students"], // Added achievements array
     },
     {
       degree: "High School Diploma",

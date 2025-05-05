@@ -35,7 +35,7 @@ export default function Skills() {
     {
       title: "Passionate Engineering Skills",
       skills: [
-        { name: "Mechine Dynamics", level: 90 },
+        { name: "Machine Dynamics", level: 90 },
         { name: "Vibration Analysis", level: 90 },
         { name: "Structural Dynamics Analysis", level: 90 },
         { name: "Machine Design", level: 85 },
