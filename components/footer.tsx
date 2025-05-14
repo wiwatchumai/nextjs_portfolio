@@ -1,8 +1,12 @@
+"use client"
+
 import Link from "next/link"
 import { Github, Linkedin, Mail, Instagram, Lightbulb } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const { t } = useLanguage()
 
   return (
     <footer className="bg-muted/30 py-12 border-t border-muted">
@@ -37,8 +41,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-muted text-center">
-          <p className="text-sm text-muted-foreground">© {currentYear} "Every Move Creates an Impact" -Wiwat Chumai.</p>
-          <p className="text-xs text-muted-foreground mt-2">Made with Next.js and Tailwind CSS</p>
+          <p className="text-sm text-muted-foreground">
+            © {currentYear} "{t("footer.copyright")}" -Wiwat Chumai.
+          </p>
+          <p className="text-xs text-muted-foreground mt-2">{t("footer.madewith")}</p>
         </div>
       </div>
     </footer>

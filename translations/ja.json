@@ -1,0 +1,49 @@
+{
+  "nav.home": "ホーム",
+  "nav.about": "自己紹介",
+  "nav.education": "学歴",
+  "nav.awards": "受賞歴",
+  "nav.projects": "プロジェクト",
+  "nav.skills": "スキル",
+  "nav.contact": "連絡先",
+
+  "hero.title": "こんにちは、私は",
+  "hero.subtitle": "機械・航空宇宙工学専攻の学生",
+  "hero.description": "九州大学（IUPE）の情熱的な工学生で、高度なコンピュータ支援工学（CAE）ツールを使用した構造力学と振動解析を専門としています。",
+  "hero.cta": "詳細を見る",
+
+  "about.title": "自己紹介",
+  "about.subtitle": "機械・航空宇宙工学専攻の学生",
+  "about.p1": "私は九州大学（IUPE）の工学生で、構造力学と振動解析に情熱を持っています。私の学術的な旅は14歳の時、FreeCADなどのツールを通じてコンピュータ支援設計（CAD）を発見したことから始まりました。特に工学分野におけるCADの精度、拡張性、創造的な可能性に魅了されました。",
+  "about.p2": "物理オリンピックへの参加を通じて、力学と論理的な問題解決に強い熱意を持つようになりました。これにより、有限要素法（FEM）などの方法を使用して複雑な機械的問題を解決するために、計算ツールとCADスキルをどのように組み合わせることができるかを探求するようになりました。",
+  "about.p3": "現代の工学設計における構造力学の重要性が見過ごされがちであることに特に関心を持っています。構造物の動的挙動を無視すると、実世界のアプリケーションで重大な問題が発生する可能性があります。そのため、エンジニアが特にエネルギーシステムやアップストリーム機械において、動的解析を理解し設計に統合するのを助けるツールや技術の進歩に情熱を注いでいます。",
+  "about.location": "所在地",
+  "about.email": "メール",
+
+  "education.title": "学歴",
+  "education.subtitle": "私の学術的な旅と教育背景",
+  "education.courses": "主要コース",
+  "education.achievements": "成果",
+
+  "awards.title": "受賞歴とコンペティション",
+  "awards.subtitle": "私の学術的な旅を形作った認識とコンペティション",
+
+  "projects.title": "プロジェクト",
+  "projects.subtitle": "学業中に取り組んだ学術的および個人的なプロジェクトの選択",
+
+  "skills.title": "スキル",
+  "skills.subtitle": "コースワークとプロジェクトを通じて開発した技術的スキルと知識",
+
+  "contact.title": "連絡先",
+  "contact.subtitle": "以下のチャネルを通じてお気軽にご連絡ください",
+  "contact.info": "連絡先情報",
+  "contact.location": "所在地",
+  "contact.email": "メール",
+  "contact.phone": "電話",
+  "contact.instagram": "インスタグラム",
+  "contact.emailMe": "メールを送る",
+  "contact.followInstagram": "インスタグラムをフォロー",
+
+  "footer.copyright": "すべての動きが影響を生み出す",
+  "footer.madewith": "Next.jsとTailwind CSSで作成"
+}

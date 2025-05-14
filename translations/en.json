@@ -1,0 +1,49 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.education": "Education",
+  "nav.awards": "Awards",
+  "nav.projects": "Projects",
+  "nav.skills": "Skills",
+  "nav.contact": "Contact",
+
+  "hero.title": "Hi, I'm",
+  "hero.subtitle": "Mechanical and Aerospace Engineering Student",
+  "hero.description": "A passionate engineering student at Kyushu University (IUPE), Japan, specializing in structural dynamics and vibration analysis using advanced Computer-Aided Engineering (CAE) tools.",
+  "hero.cta": "Learn more",
+
+  "about.title": "About Me",
+  "about.subtitle": "Mechanical and Aerospace Engineering Student",
+  "about.p1": "I'm an engineering student at Kyushu University (IUPE) with a passion for structural dynamics and vibration analysis. My academic journey began at age 14, when I discovered Computer-Aided Design (CAD) through tools like FreeCAD. I was immediately drawn to the precision, scalability, and creative potential CAD offers—especially in the field of engineering.",
+  "about.p2": "My interest deepened during my participation in the Physics Olympiad, where I developed a strong enthusiasm for mechanics and logical problem-solving. This led me to explore how computational tools and CAD skills could be combined to solve complex mechanical problems using methods like the Finite Element Method (FEM).",
+  "about.p3": "I'm particularly driven by the often-overlooked importance of structural dynamics in modern engineering design. Neglecting dynamic behavior in structures can lead to critical issues in real-world applications. That's why I'm passionate about advancing tools and technologies that help engineers better understand and integrate dynamic analysis into their designs—especially in energy systems and upstream machinery.",
+  "about.location": "Location",
+  "about.email": "Email",
+
+  "education.title": "Education",
+  "education.subtitle": "My academic journey and educational background",
+  "education.courses": "Key Courses",
+  "education.achievements": "Achievements",
+
+  "awards.title": "Awards & Competitions",
+  "awards.subtitle": "Recognitions and competitions that have shaped my academic journey",
+
+  "projects.title": "My Projects",
+  "projects.subtitle": "A selection of academic and personal projects I've worked on during my studies",
+
+  "skills.title": "Skills",
+  "skills.subtitle": "Technical skills and knowledge I've developed through my coursework and projects",
+
+  "contact.title": "Contact",
+  "contact.subtitle": "Feel free to reach out through any of the following channels",
+  "contact.info": "Contact Information",
+  "contact.location": "Location",
+  "contact.email": "Email",
+  "contact.phone": "Phone",
+  "contact.instagram": "Instagram",
+  "contact.emailMe": "Email Me",
+  "contact.followInstagram": "Follow on Instagram",
+
+  "footer.copyright": "Every Move Creates an Impact",
+  "footer.madewith": "Made with Next.js and Tailwind CSS"
+}

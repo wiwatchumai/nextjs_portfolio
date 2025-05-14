@@ -1,0 +1,49 @@
+{
+  "nav.home": "Startseite",
+  "nav.about": "Über mich",
+  "nav.education": "Ausbildung",
+  "nav.awards": "Auszeichnungen",
+  "nav.projects": "Projekte",
+  "nav.skills": "Fähigkeiten",
+  "nav.contact": "Kontakt",
+
+  "hero.title": "Hallo, ich bin",
+  "hero.subtitle": "Student für Maschinenbau und Luft- und Raumfahrttechnik",
+  "hero.description": "Ein leidenschaftlicher Ingenieurstudent an der Kyushu Universität (IUPE), Japan, spezialisiert auf Strukturdynamik und Schwingungsanalyse mit fortschrittlichen Computer-Aided Engineering (CAE) Tools.",
+  "hero.cta": "Mehr erfahren",
+
+  "about.title": "Über mich",
+  "about.subtitle": "Student für Maschinenbau und Luft- und Raumfahrttechnik",
+  "about.p1": "Ich bin ein Ingenieurstudent an der Kyushu Universität (IUPE) mit einer Leidenschaft für Strukturdynamik und Schwingungsanalyse. Meine akademische Reise begann im Alter von 14 Jahren, als ich Computer-Aided Design (CAD) durch Tools wie FreeCAD entdeckte. Ich war sofort von der Präzision, Skalierbarkeit und dem kreativen Potenzial begeistert, das CAD bietet – besonders im Bereich der Ingenieurwissenschaften.",
+  "about.p2": "Mein Interesse vertiefte sich während meiner Teilnahme an der Physik-Olympiade, wo ich eine starke Begeisterung für Mechanik und logisches Problemlösen entwickelte. Dies führte mich dazu, zu erforschen, wie Berechnungswerkzeuge und CAD-Fähigkeiten kombiniert werden können, um komplexe mechanische Probleme mit Methoden wie der Finite-Elemente-Methode (FEM) zu lösen.",
+  "about.p3": "Ich bin besonders motiviert durch die oft übersehene Bedeutung der Strukturdynamik im modernen Ingenieurdesign. Die Vernachlässigung des dynamischen Verhaltens in Strukturen kann zu kritischen Problemen in realen Anwendungen führen. Deshalb bin ich leidenschaftlich daran interessiert, Werkzeuge und Technologien voranzutreiben, die Ingenieuren helfen, die dynamische Analyse besser zu verstehen und in ihre Designs zu integrieren – besonders in Energiesystemen und Upstream-Maschinen.",
+  "about.location": "Standort",
+  "about.email": "E-Mail",
+
+  "education.title": "Ausbildung",
+  "education.subtitle": "Meine akademische Reise und Bildungshintergrund",
+  "education.courses": "Hauptkurse",
+  "education.achievements": "Erfolge",
+
+  "awards.title": "Auszeichnungen & Wettbewerbe",
+  "awards.subtitle": "Anerkennungen und Wettbewerbe, die meine akademische Reise geprägt haben",
+
+  "projects.title": "Meine Projekte",
+  "projects.subtitle": "Eine Auswahl akademischer und persönlicher Projekte, an denen ich während meines Studiums gearbeitet habe",
+
+  "skills.title": "Fähigkeiten",
+  "skills.subtitle": "Technische Fähigkeiten und Kenntnisse, die ich durch meine Kurse und Projekte entwickelt habe",
+
+  "contact.title": "Kontakt",
+  "contact.subtitle": "Kontaktieren Sie mich gerne über einen der folgenden Kanäle",
+  "contact.info": "Kontaktinformationen",
+  "contact.location": "Standort",
+  "contact.email": "E-Mail",
+  "contact.phone": "Telefon",
+  "contact.instagram": "Instagram",
+  "contact.emailMe": "E-Mail senden",
+  "contact.followInstagram": "Auf Instagram folgen",
+
+  "footer.copyright": "Jede Bewegung erzeugt eine Wirkung",
+  "footer.madewith": "Erstellt mit Next.js und Tailwind CSS"
+}

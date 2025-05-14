@@ -5,13 +5,16 @@ import Link from "next/link"
 import { Menu, X, Lightbulb } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./mode-toggle"
+import { LanguageSwitcher } from "./language-switcher"
 import { cn } from "@/lib/utils"
 import { useMobile } from "@/hooks/use-mobile"
+import { useLanguage } from "@/contexts/language-context"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const isMobile = useMobile()
   const [scrolled, setScrolled] = useState(false)
+  const { t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,13 +30,13 @@ export default function Navbar() {
   }
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Education", href: "#education" },
-    { name: "Awards", href: "#awards" },
-    { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" },
+    { name: t("nav.home"), href: "#home" },
+    { name: t("nav.about"), href: "#about" },
+    { name: t("nav.education"), href: "#education" },
+    { name: t("nav.awards"), href: "#awards" },
+    { name: t("nav.projects"), href: "#projects" },
+    { name: t("nav.skills"), href: "#skills" },
+    { name: t("nav.contact"), href: "#contact" },
   ]
 
   return (
@@ -62,10 +65,14 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <ModeToggle />
+            <div className="flex items-center gap-2">
+              <LanguageSwitcher />
+              <ModeToggle />
+            </div>
           </div>
 
           <div className="flex md:hidden items-center gap-2">
+            <LanguageSwitcher />
             <ModeToggle />
             <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
