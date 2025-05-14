@@ -17,6 +17,13 @@ const nextConfig = {
         fullySpecified: false
       }
     });
+    
+    // Add optimization settings
+    config.optimization = {
+      ...config.optimization,
+      minimize: true,
+    };
+    
     return config;
   }
 };
