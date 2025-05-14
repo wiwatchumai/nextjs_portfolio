@@ -9,9 +9,8 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mon
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
 export const metadata = {
-  title: "Wiwat Chumai - Engineering Portfolio",
-  description:
-    "Personal portfolio of Wiwat Chumai, a Mechanical and Aerospace Engineering student at Kyushu University",
+  title: "Student Engineering Portfolio",
+  description: "Engineering student portfolio showcasing academic projects and technical skills",
     generator: 'v0.dev'
 }
 
