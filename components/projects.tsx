@@ -187,7 +187,9 @@ export default function Projects() {
                   </div>
 
                   <h3 className="text-lg font-bold mb-3">{project.title[language]}</h3>
-                  <p className="text-sm text-muted-foreground mb-4 flex-grow">{project.description[language]}</p>
+                  <p className="text-sm text-muted-foreground mb-4 flex-grow" style={{ textAlign: "justify" }}>
+                    {project.description[language]}
+                  </p>
 
                   <div className="mt-auto space-y-4">
                     <div className="flex flex-wrap gap-2">

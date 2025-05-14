@@ -38,11 +38,17 @@ export default function About() {
             <div className="h-1 w-20 bg-primary mt-2 mb-4 mx-auto"></div>
           </div>
 
-          <p className="text-muted-foreground text-justify">{t("about.p1")}</p>
+          <p className="text-muted-foreground" style={{ textAlign: "justify" }}>
+            {t("about.p1")}
+          </p>
 
-          <p className="text-muted-foreground text-justify">{t("about.p2")}</p>
+          <p className="text-muted-foreground" style={{ textAlign: "justify" }}>
+            {t("about.p2")}
+          </p>
 
-          <p className="text-muted-foreground text-justify">{t("about.p3")}</p>
+          <p className="text-muted-foreground" style={{ textAlign: "justify" }}>
+            {t("about.p3")}
+          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 text-sm max-w-md mx-auto">
             <div className="flex items-start gap-3">

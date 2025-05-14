@@ -14,7 +14,14 @@ export default function Hero() {
     setMounted(true)
   }, [])
 
-  if (!mounted) return null
+  // Return a simple loading state or null during SSR
+  if (!mounted) {
+    return (
+      <section id="home" className="relative min-h-screen flex items-center justify-center py-20">
+        <div className="text-center">Loading...</div>
+      </section>
+    )
+  }
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center py-20">

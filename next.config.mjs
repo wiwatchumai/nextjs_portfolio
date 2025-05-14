@@ -9,14 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Simplified webpack configuration
   webpack: (config) => {
-    config.module.rules.push({
-      test: /\.json$/,
-      type: 'javascript/auto',
-      resolve: {
-        fullySpecified: false
-      }
-    });
     return config;
   }
 };
