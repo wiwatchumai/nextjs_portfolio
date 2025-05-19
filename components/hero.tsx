@@ -4,11 +4,9 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import { motion } from "framer-motion"
-import { useLanguage } from "@/contexts/language-context"
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
-  const { t } = useLanguage()
 
   useEffect(() => {
     setMounted(true)
@@ -38,14 +36,17 @@ export default function Hero() {
         >
           <div className="space-y-6">
             <div>
-              <p className="text-sm text-primary mb-2 font-mono">{t("hero.subtitle")}</p>
-              <h1 className="text-4xl md:text-5xl font-bold">
-                {t("hero.title")} <span className="text-primary">Wiwat Chumai</span>
+              <p className="text-sm text-primary mb-2 font-mono">Mechanical and Aerospace Engineering Student</p>
+              <h1 className="text-4xl md:text-5xl">
+                Hi, I'm <span className="text-primary">Wiwat Chumai</span>
               </h1>
               <div className="h-1 w-20 bg-primary mt-4 mx-auto"></div>
             </div>
 
-            <p className="text-lg text-muted-foreground mx-auto">"{t("hero.description")}"</p>
+            <p className="text-lg text-muted-foreground mx-auto">
+              "A passionate engineering student at Kyushu University (IUPE), Japan, specializing in structural dynamics
+              and vibration analysis using advanced Computer-Aided Engineering (CAE) tools."
+            </p>
 
             <div className="flex gap-4 justify-center">
               <Button asChild variant="outline" size="icon" className="rounded-md">
@@ -66,9 +67,9 @@ export default function Hero() {
             </div>
 
             <div className="flex justify-center">
-              <Button asChild className="rounded-md" variant="default">
+              <Button asChild className="rounded-none bg-primary hover:bg-primary/90 text-white" variant="default">
                 <a href="#about">
-                  {t("hero.cta")} <ArrowDown className="ml-2 h-4 w-4" />
+                  Learn more <ArrowDown className="ml-2 h-4 w-4" />
                 </a>
               </Button>
             </div>

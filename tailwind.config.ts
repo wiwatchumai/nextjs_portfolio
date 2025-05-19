@@ -22,6 +22,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+        heading: ["var(--font-heading)"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -32,7 +33,7 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          blue: "#3A5A80",
+          red: "#c81e20",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

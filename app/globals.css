@@ -13,24 +13,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 7%;
 
-    --primary: 210 37% 37%;
+    --primary: 358 74% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 48 100% 50%;
-    --secondary-foreground: 0 0% 7%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 85%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 48 100% 50%;
-    --accent-foreground: 0 0% 7%;
+    --accent: 358 74% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 80%;
     --input: 0 0% 80%;
-    --ring: 210 37% 37%;
+    --ring: 358 74% 45%;
 
     --radius: 0.5rem;
   }
@@ -45,24 +45,24 @@
     --popover: 0 0% 16%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 210 37% 37%;
+    --primary: 358 74% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 48 100% 50%;
-    --secondary-foreground: 0 0% 7%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 20%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 48 100% 50%;
-    --accent-foreground: 0 0% 7%;
+    --accent: 358 74% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 25%;
     --input: 0 0% 25%;
-    --ring: 210 37% 37%;
+    --ring: 358 74% 45%;
   }
 }
 
@@ -74,6 +74,15 @@
     @apply bg-background text-foreground;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-black;
+  }
+
   .bg-grid-pattern {
     background-size: 20px 20px;
   }
@@ -83,14 +92,14 @@
   }
 }
 
-.custom-blue {
-  color: #3a5a80;
+.custom-red {
+  color: #c81e20;
 }
 
-.bg-custom-blue {
-  background-color: #3a5a80;
+.bg-custom-red {
+  background-color: #c81e20;
 }
 
-.border-custom-blue {
-  border-color: #3a5a80;
+.border-custom-red {
+  border-color: #c81e20;
 }
