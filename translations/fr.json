@@ -1,0 +1,49 @@
+{
+  "nav.home": "Accueil",
+  "nav.about": "À propos",
+  "nav.education": "Formation",
+  "nav.awards": "Récompenses",
+  "nav.projects": "Projets",
+  "nav.skills": "Compétences",
+  "nav.contact": "Contact",
+
+  "hero.title": "Bonjour, je suis",
+  "hero.subtitle": "Étudiant en génie mécanique et aérospatial",
+  "hero.description": "Un étudiant passionné en ingénierie à l'Université de Kyushu (IUPE), Japon, spécialisé dans la dynamique structurelle et l'analyse des vibrations à l'aide d'outils avancés d'ingénierie assistée par ordinateur (CAE).",
+  "hero.cta": "En savoir plus",
+
+  "about.title": "À propos de moi",
+  "about.subtitle": "Étudiant en génie mécanique et aérospatial",
+  "about.p1": "Je suis un étudiant en ingénierie à l'Université de Kyushu (IUPE) passionné par la dynamique structurelle et l'analyse des vibrations. Mon parcours académique a commencé à l'âge de 14 ans, lorsque j'ai découvert la conception assistée par ordinateur (CAO) grâce à des outils comme FreeCAD. J'ai été immédiatement attiré par la précision, l'évolutivité et le potentiel créatif qu'offre la CAO, en particulier dans le domaine de l'ingénierie.",
+  "about.p2": "Mon intérêt s'est approfondi lors de ma participation à l'Olympiade de physique, où j'ai développé un fort enthousiasme pour la mécanique et la résolution logique de problèmes. Cela m'a amené à explorer comment les outils de calcul et les compétences en CAO pourraient être combinés pour résoudre des problèmes mécaniques complexes en utilisant des méthodes comme la méthode des éléments finis (MEF).",
+  "about.p3": "Je suis particulièrement motivé par l'importance souvent négligée de la dynamique structurelle dans la conception technique moderne. Négliger le comportement dynamique des structures peut entraîner des problèmes critiques dans les applications réelles. C'est pourquoi je suis passionné par l'avancement des outils et technologies qui aident les ingénieurs à mieux comprendre et intégrer l'analyse dynamique dans leurs conceptions, en particulier dans les systèmes énergétiques et les machines en amont.",
+  "about.location": "Emplacement",
+  "about.email": "Email",
+
+  "education.title": "Formation",
+  "education.subtitle": "Mon parcours académique et mon background éducatif",
+  "education.courses": "Cours principaux",
+  "education.achievements": "Réalisations",
+
+  "awards.title": "Prix & Compétitions",
+  "awards.subtitle": "Reconnaissances et compétitions qui ont façonné mon parcours académique",
+
+  "projects.title": "Mes Projets",
+  "projects.subtitle": "Une sélection de projets académiques et personnels sur lesquels j'ai travaillé pendant mes études",
+
+  "skills.title": "Compétences",
+  "skills.subtitle": "Compétences techniques et connaissances que j'ai développées à travers mes cours et projets",
+
+  "contact.title": "Contact",
+  "contact.subtitle": "N'hésitez pas à me contacter via l'un des canaux suivants",
+  "contact.info": "Informations de contact",
+  "contact.location": "Emplacement",
+  "contact.email": "Email",
+  "contact.phone": "Téléphone",
+  "contact.instagram": "Instagram",
+  "contact.emailMe": "M'envoyer un email",
+  "contact.followInstagram": "Me suivre sur Instagram",
+
+  "footer.copyright": "Chaque mouvement crée un impact",
+  "footer.madewith": "Réalisé avec Next.js et Tailwind CSS"
+}

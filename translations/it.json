@@ -1,0 +1,49 @@
+{
+  "nav.home": "Home",
+  "nav.about": "Chi sono",
+  "nav.education": "Formazione",
+  "nav.awards": "Premi",
+  "nav.projects": "Progetti",
+  "nav.skills": "Competenze",
+  "nav.contact": "Contatti",
+
+  "hero.title": "Ciao, sono",
+  "hero.subtitle": "Studente di Ingegneria Meccanica e Aerospaziale",
+  "hero.description": "Uno studente appassionato di ingegneria presso l'Università di Kyushu (IUPE), Giappone, specializzato in dinamica strutturale e analisi delle vibrazioni utilizzando strumenti avanzati di Computer-Aided Engineering (CAE).",
+  "hero.cta": "Scopri di più",
+
+  "about.title": "Chi sono",
+  "about.subtitle": "Studente di Ingegneria Meccanica e Aerospaziale",
+  "about.p1": "Sono uno studente di ingegneria presso l'Università di Kyushu (IUPE) con una passione per la dinamica strutturale e l'analisi delle vibrazioni. Il mio percorso accademico è iniziato all'età di 14 anni, quando ho scoperto il Computer-Aided Design (CAD) attraverso strumenti come FreeCAD. Sono stato immediatamente attratto dalla precisione, scalabilità e potenziale creativo che il CAD offre, specialmente nel campo dell'ingegneria.",
+  "about.p2": "Il mio interesse si è approfondito durante la mia partecipazione all'Olimpiade di Fisica, dove ho sviluppato un forte entusiasmo per la meccanica e la risoluzione logica dei problemi. Questo mi ha portato a esplorare come gli strumenti computazionali e le competenze CAD potessero essere combinati per risolvere problemi meccanici complessi utilizzando metodi come il Metodo degli Elementi Finiti (FEM).",
+  "about.p3": "Sono particolarmente motivato dall'importanza spesso trascurata della dinamica strutturale nella progettazione ingegneristica moderna. Trascurare il comportamento dinamico nelle strutture può portare a problemi critici nelle applicazioni reali. Ecco perché sono appassionato di far progredire strumenti e tecnologie che aiutino gli ingegneri a comprendere meglio e integrare l'analisi dinamica nei loro progetti, specialmente nei sistemi energetici e nei macchinari upstream.",
+  "about.location": "Posizione",
+  "about.email": "Email",
+
+  "education.title": "Formazione",
+  "education.subtitle": "Il mio percorso accademico e background educativo",
+  "education.courses": "Corsi principali",
+  "education.achievements": "Risultati",
+
+  "awards.title": "Premi e Competizioni",
+  "awards.subtitle": "Riconoscimenti e competizioni che hanno plasmato il mio percorso accademico",
+
+  "projects.title": "I miei Progetti",
+  "projects.subtitle": "Una selezione di progetti accademici e personali su cui ho lavorato durante i miei studi",
+
+  "skills.title": "Competenze",
+  "skills.subtitle": "Competenze tecniche e conoscenze che ho sviluppato attraverso i miei corsi e progetti",
+
+  "contact.title": "Contatti",
+  "contact.subtitle": "Sentiti libero di contattarmi attraverso uno dei seguenti canali",
+  "contact.info": "Informazioni di contatto",
+  "contact.location": "Posizione",
+  "contact.email": "Email",
+  "contact.phone": "Telefono",
+  "contact.instagram": "Instagram",
+  "contact.emailMe": "Inviami un'email",
+  "contact.followInstagram": "Seguimi su Instagram",
+
+  "footer.copyright": "Ogni movimento crea un impatto",
+  "footer.madewith": "Realizzato con Next.js e Tailwind CSS"
+}
