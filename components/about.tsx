@@ -11,7 +11,7 @@ export default function About() {
   })
 
   return (
-    <section id="about" className="py-20 bg-muted/20">
+    <section id="about" className="py-20 bg-black/40">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -20,8 +20,8 @@ export default function About() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl">About Me</h2>
-          <div className="h-1 w-20 bg-primary mt-4 mx-auto"></div>
+          <h2 className="text-3xl silver-gradient">About Me</h2>
+          <div className="h-[1px] w-20 bg-white/30 mt-4 mx-auto"></div>
         </motion.div>
 
         <motion.div
@@ -32,24 +32,24 @@ export default function About() {
           className="space-y-6"
         >
           <div className="text-center">
-            <h3 className="text-2xl">Mechanical and Aerospace Engineering Student</h3>
-            <div className="h-1 w-20 bg-primary mt-2 mb-4 mx-auto"></div>
+            <h3 className="text-2xl silver-gradient">Mechanical and Aerospace Engineering Student</h3>
+            <div className="h-[1px] w-20 bg-white/30 mt-2 mb-4 mx-auto"></div>
           </div>
 
-          <p className="text-muted-foreground" style={{ textAlign: "justify" }}>
+          <p className="text-white/70" style={{ textAlign: "justify" }}>
             I'm an engineering student at Kyushu University (IUPE) with a passion for structural dynamics and vibration
             analysis. My academic journey began at age 14, when I discovered Computer-Aided Design (CAD) through tools
             like FreeCAD. I was immediately drawn to the precision, scalability, and creative potential CAD
             offers—especially in the field of engineering.
           </p>
 
-          <p className="text-muted-foreground" style={{ textAlign: "justify" }}>
+          <p className="text-white/70" style={{ textAlign: "justify" }}>
             My interest deepened during my participation in the Physics Olympiad, where I developed a strong enthusiasm
             for mechanics and logical problem-solving. This led me to explore how computational tools and CAD skills
             could be combined to solve complex mechanical problems using methods like the Finite Element Method (FEM).
           </p>
 
-          <p className="text-muted-foreground" style={{ textAlign: "justify" }}>
+          <p className="text-white/70" style={{ textAlign: "justify" }}>
             I'm particularly driven by the often-overlooked importance of structural dynamics in modern engineering
             design. Neglecting dynamic behavior in structures can lead to critical issues in real-world applications.
             That's why I'm passionate about advancing tools and technologies that help engineers better understand and
@@ -58,17 +58,17 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 text-sm max-w-md mx-auto">
             <div className="flex items-start gap-3">
-              <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+              <MapPin className="h-5 w-5 text-white/80 shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-semibold">Location</h4>
-                <p className="text-muted-foreground">Fukuoka, Japan</p>
+                <h4 className="font-semibold text-white/90">Location</h4>
+                <p className="text-white/60">Fukuoka, Japan</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+              <Mail className="h-5 w-5 text-white/80 shrink-0 mt-0.5" />
               <div>
-                <h4 className="font-semibold">Email</h4>
-                <p className="text-muted-foreground">wiwatchumai@gmail.com</p>
+                <h4 className="font-semibold text-white/90">Email</h4>
+                <p className="text-white/60">wiwatchumai@gmail.com</p>
               </div>
             </div>
           </div>

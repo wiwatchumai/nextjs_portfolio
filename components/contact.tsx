@@ -37,7 +37,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-20 bg-muted/20">
+    <section id="contact" className="py-20 bg-black/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -46,9 +46,9 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl">Contact</h2>
-          <div className="h-1 w-20 bg-primary mt-4 mx-auto"></div>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl silver-gradient">Contact</h2>
+          <div className="h-[1px] w-20 bg-white/30 mt-4 mx-auto"></div>
+          <p className="mt-4 text-white/60 max-w-2xl mx-auto">
             Feel free to reach out through any of the following channels
           </p>
         </motion.div>
@@ -60,26 +60,26 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-6"
           >
-            <Card>
+            <Card className="bg-black/40 border border-white/10">
               <CardContent className="p-6 space-y-6">
-                <h3 className="text-xl">Contact Information</h3>
+                <h3 className="text-xl silver-gradient">Contact Information</h3>
                 <div className="space-y-6">
                   {contactInfo.map((item) => (
                     <div key={item.title} className="flex items-start gap-4">
-                      <div className="bg-primary/10 p-2 rounded-md text-primary">{item.icon}</div>
+                      <div className="bg-white/5 p-2 rounded-md text-white/80">{item.icon}</div>
                       <div>
-                        <h4 className="font-medium">{item.title}</h4>
+                        <h4 className="font-medium text-white/90">{item.title}</h4>
                         {item.isLink ? (
                           <a
                             href="https://www.instagram.com/feuzzy_field/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-primary hover:underline"
+                            className="text-white/80 hover:text-white"
                           >
                             {item.details}
                           </a>
                         ) : (
-                          <p className="text-muted-foreground">{item.details}</p>
+                          <p className="text-white/60">{item.details}</p>
                         )}
                       </div>
                     </div>
@@ -87,7 +87,11 @@ export default function Contact() {
                 </div>
 
                 <div className="flex justify-center pt-4 gap-4">
-                  <Button asChild className="rounded-none bg-primary hover:bg-primary/90 text-white" variant="default">
+                  <Button
+                    asChild
+                    className="rounded-none bg-white/10 hover:bg-white/15 text-white border border-white/20"
+                    variant="outline"
+                  >
                     <a href="mailto:wiwatchumai@gmail.com" className="flex items-center gap-2">
                       <Mail className="h-4 w-4" />
                       <span>Email Me</span>
@@ -95,7 +99,7 @@ export default function Contact() {
                   </Button>
                   <Button
                     asChild
-                    className="rounded-none border-primary text-primary hover:bg-primary/10"
+                    className="rounded-none bg-transparent hover:bg-white/5 border border-white/20 text-white"
                     variant="outline"
                   >
                     <a

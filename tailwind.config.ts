@@ -33,7 +33,6 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          red: "#c81e20",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -81,9 +80,13 @@ const config = {
       },
       backgroundImage: {
         "grid-pattern":
-          "linear-gradient(to right, rgba(var(--foreground-rgb), 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(var(--foreground-rgb), 0.1) 1px, transparent 1px)",
+          "linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px)",
         "grid-small-pattern":
-          "linear-gradient(to right, rgba(var(--foreground-rgb), 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(var(--foreground-rgb), 0.05) 1px, transparent 1px)",
+          "linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px)",
+      },
+      letterSpacing: {
+        "ultra-wide": "0.15em",
+        "extra-wide": "0.08em",
       },
     },
   },

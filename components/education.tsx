@@ -43,9 +43,9 @@ export default function Education() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl">Education</h2>
-          <div className="h-1 w-20 bg-primary mt-4 mx-auto"></div>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">My academic journey and educational background</p>
+          <h2 className="text-3xl silver-gradient">Education</h2>
+          <div className="h-[1px] w-20 bg-white/30 mt-4 mx-auto"></div>
+          <p className="mt-4 text-white/60 max-w-2xl mx-auto">My academic journey and educational background</p>
         </motion.div>
 
         <div className="space-y-8">
@@ -56,29 +56,29 @@ export default function Education() {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="overflow-hidden border border-muted">
+              <Card className="overflow-hidden border border-white/10 bg-black/40">
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row gap-6">
                     <div className="md:w-1/4">
                       <div className="flex items-center gap-2 mb-2">
-                        <GraduationCap className="h-5 w-5 text-primary" />
-                        <span className="font-semibold">{item.period}</span>
+                        <GraduationCap className="h-5 w-5 text-white/80" />
+                        <span className="font-semibold text-white/80">{item.period}</span>
                       </div>
-                      <h3 className="text-xl">{item.degree}</h3>
-                      <p className="text-muted-foreground">{item.institution}</p>
+                      <h3 className="text-xl silver-gradient">{item.degree}</h3>
+                      <p className="text-white/60">{item.institution}</p>
                     </div>
 
                     <div className="md:w-3/4 space-y-4">
-                      <p>{item.description}</p>
+                      <p className="text-white/70">{item.description}</p>
 
                       <div>
                         <div className="flex items-center gap-2 mb-2">
-                          <BookOpen className="h-4 w-4 text-primary" />
-                          <h4 className="font-semibold">Key Courses</h4>
+                          <BookOpen className="h-4 w-4 text-white/80" />
+                          <h4 className="font-semibold text-white/90">Key Courses</h4>
                         </div>
                         <div className="flex flex-wrap gap-2">
                           {item.courses.map((course, i) => (
-                            <Badge key={i} variant="secondary">
+                            <Badge key={i} variant="secondary" className="bg-white/10 text-white/80 hover:bg-white/15">
                               {course}
                             </Badge>
                           ))}
@@ -88,10 +88,10 @@ export default function Education() {
                       {item.achievements && item.achievements.length > 0 && (
                         <div>
                           <div className="flex items-center gap-2 mb-2">
-                            <Award className="h-4 w-4 text-primary" />
-                            <h4 className="font-semibold">Achievements</h4>
+                            <Award className="h-4 w-4 text-white/80" />
+                            <h4 className="font-semibold text-white/90">Achievements</h4>
                           </div>
-                          <ul className="list-disc list-inside text-muted-foreground">
+                          <ul className="list-disc list-inside text-white/60">
                             {item.achievements.map((achievement, i) => (
                               <li key={i}>{achievement}</li>
                             ))}

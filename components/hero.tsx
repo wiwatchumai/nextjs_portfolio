@@ -4,6 +4,8 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import { motion } from "framer-motion"
+import { AnimatedLogo } from "./animated-logo"
+import { OscillixText } from "./oscillix-text"
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
@@ -24,8 +26,8 @@ export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center py-20">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(var(--foreground-rgb),0.03),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_50%)]"></div>
       </div>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -34,45 +36,95 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div className="space-y-6">
-            <div>
-              <p className="text-sm text-primary mb-2 font-mono">Mechanical and Aerospace Engineering Student</p>
-              <h1 className="text-4xl md:text-5xl">
-                Hi, I'm <span className="text-primary">Wiwat Chumai</span>
-              </h1>
-              <div className="h-1 w-20 bg-primary mt-4 mx-auto"></div>
-            </div>
+          <div className="space-y-8">
+            <motion.div
+              className="flex flex-col items-center gap-6"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <AnimatedLogo className="w-32 h-32" />
+              <OscillixText size="xl" className="opacity-90" />
+            </motion.div>
 
-            <p className="text-lg text-muted-foreground mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <p className="text-sm text-white/70 mb-4 font-sans tracking-wide">
+                MECHANICAL AND AEROSPACE ENGINEERING STUDENT
+              </p>
+              <h1 className="text-5xl md:text-6xl silver-gradient mb-2">
+                Hi, I'm <span className="silver-glow elegant-text block mt-2">Wiwat Chumai</span>
+              </h1>
+              <div className="h-[1px] w-32 bg-white/30 mt-8 mx-auto"></div>
+            </motion.div>
+
+            <motion.p
+              className="text-lg text-white/60 mx-auto font-sans leading-relaxed max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
               "A passionate engineering student at Kyushu University (IUPE), Japan, specializing in structural dynamics
               and vibration analysis using advanced Computer-Aided Engineering (CAE) tools."
-            </p>
+            </motion.p>
 
-            <div className="flex gap-4 justify-center">
-              <Button asChild variant="outline" size="icon" className="rounded-md">
+            <motion.div
+              className="flex gap-4 justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <Button
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded-md border-white/20 bg-transparent hover:bg-white/5"
+              >
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="h-5 w-5" />
+                  <Github className="h-5 w-5 text-white/80" />
                 </a>
               </Button>
-              <Button asChild variant="outline" size="icon" className="rounded-md">
+              <Button
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded-md border-white/20 bg-transparent hover:bg-white/5"
+              >
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
+                  <Linkedin className="h-5 w-5 text-white/80" />
                 </a>
               </Button>
-              <Button asChild variant="outline" size="icon" className="rounded-md">
+              <Button
+                asChild
+                variant="outline"
+                size="icon"
+                className="rounded-md border-white/20 bg-transparent hover:bg-white/5"
+              >
                 <a href="mailto:wiwatchumai@gmail.com" aria-label="Email">
-                  <Mail className="h-5 w-5" />
+                  <Mail className="h-5 w-5 text-white/80" />
                 </a>
               </Button>
-            </div>
+            </motion.div>
 
-            <div className="flex justify-center">
-              <Button asChild className="rounded-none bg-primary hover:bg-primary/90 text-white" variant="default">
-                <a href="#about">
-                  Learn more <ArrowDown className="ml-2 h-4 w-4" />
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.0 }}
+            >
+              <Button
+                asChild
+                className="rounded-none bg-transparent hover:bg-white/5 border border-white/20 text-white font-sans tracking-wide"
+                variant="outline"
+              >
+                <a href="#about" className="flex items-center gap-2">
+                  LEARN MORE <ArrowDown className="h-4 w-4" />
                 </a>
               </Button>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
