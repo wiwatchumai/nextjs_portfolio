@@ -1,6 +1,6 @@
 interface OscillixTextProps {
   className?: string
-  size?: "sm" | "md" | "lg" | "xl"
+  size?: "sm" | "md" | "lg" | "xl" | "2xl"
 }
 
 export function OscillixText({ className = "", size = "md" }: OscillixTextProps) {
@@ -9,6 +9,7 @@ export function OscillixText({ className = "", size = "md" }: OscillixTextProps)
     md: "h-8",
     lg: "h-12",
     xl: "h-16",
+    "2xl": "h-20",
   }
 
   return (

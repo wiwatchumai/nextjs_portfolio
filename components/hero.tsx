@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
 import { motion } from "framer-motion"
 import { AnimatedLogo } from "./animated-logo"
-import { OscillixText } from "./oscillix-text"
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
@@ -36,21 +35,21 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <div className="space-y-8">
+          <div className="space-y-12">
+            {/* Logo only */}
             <motion.div
-              className="flex flex-col items-center gap-6"
+              className="flex justify-center"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <AnimatedLogo className="w-32 h-32" />
-              <OscillixText size="xl" className="opacity-90" />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
             >
               <p className="text-sm text-white/70 mb-4 font-sans tracking-wide">
                 MECHANICAL AND AEROSPACE ENGINEERING STUDENT
@@ -65,7 +64,7 @@ export default function Hero() {
               className="text-lg text-white/60 mx-auto font-sans leading-relaxed max-w-2xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 1.0 }}
             >
               "A passionate engineering student at Kyushu University (IUPE), Japan, specializing in structural dynamics
               and vibration analysis using advanced Computer-Aided Engineering (CAE) tools."
@@ -75,7 +74,7 @@ export default function Hero() {
               className="flex gap-4 justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
             >
               <Button
                 asChild
@@ -113,7 +112,7 @@ export default function Hero() {
               className="flex justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.0 }}
+              transition={{ duration: 0.6, delay: 1.4 }}
             >
               <Button
                 asChild
