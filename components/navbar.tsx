@@ -35,7 +35,6 @@ export default function Navbar() {
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
-    { name: "Calculator", href: "/calculator" },
   ]
 
   return (
@@ -49,7 +48,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center gap-3">
             <Logo className="w-8 h-8" />
-            <Link href="/" className="flex items-center">
+            <Link href="#home" className="flex items-center">
               <OscillixText size="sm" className="hover:opacity-80 transition-opacity" />
             </Link>
           </div>

@@ -27,16 +27,6 @@ export default function Projects() {
 
   const [projects] = useState<Project[]>([
     {
-      id: 0,
-      title: "Interactive Rotor Balancing Calculator",
-      description:
-        "A comprehensive web-based tool for single plane balancing problems in rotor dynamics. This field balancing algorithm requires minimal machinery pause and provides accurate correction weight calculations. Features include predicted trial weight calculations, effective vibration vector analysis, influence coefficient computation, heavy spot identification, and correction weight recommendations. Built with React and TypeScript for real-time calculations.",
-      tags: ["Rotor Dynamics", "Field Balancing", "Web Calculator", "React", "TypeScript"],
-      year: "2025",
-      type: "Interactive Tool",
-      demo: "/calculator",
-    },
-    {
       id: 1,
       title: "Simplification to Droplet Impact Fluid Surface Phenomenon Through Bouncing Ball Model",
       description:
